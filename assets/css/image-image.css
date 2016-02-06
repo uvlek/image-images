@@ -1,0 +1,3 @@
+.image-image { overflow: hidden; }
+.image-image .item { float: left; margin: 4px; border: 1px solid #eee; box-sizing: content-box; overflow: hidden; position: relative;  }
+.image-image .item img { display: block; width: auto; height: 100%; }

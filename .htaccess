@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+Options +SymLinksIfOwnerMatch
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule . /index.php [L]
+RewriteRule ^(.*)upload_files/((.*)\.(jpe?g|gif|png))$ /watermark.php [QSA,NC]
+</IfModule>
